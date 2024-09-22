@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #00787F;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00007F;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #444;
+}
+
+section {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.upload {
+    text-align: left;
+    border: 2px solid;
+    border-color: #FFFFFF #808080 #808080 #FFFFFF;
+    box-shadow: 2px 2px 8px black;
+}
+
+.title {
+    background-color: #00007F;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 0;
+    color: #f0f0f0;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  margin-bottom: 20px; 
+}
+
+input[type="file"], input[type="submit"] {
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.upload-instructions{
+ padding-left: 10px;
+}
+
+input[type="submit"] {
+    background-color: #808080;
+    color: white;
+    cursor: pointer;
+    flex: 0;
+}
+
+input[type="submit"]:hover {
+    background-color: #696969; /* Darker shade for hover effect */
+}
+
+ul {
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}

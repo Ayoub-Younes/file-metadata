@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Metadata Microservice</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<header>
+    <h1>File Metadata Microservice</h1>
+</header>
+
+<div class="container">
+    <section class="info">
+        <h2>Usage:</h2>
+        <p>
+            Upload a file to retrieve its basic details, such as name, type, and size.
+        </p>
+        <ul>
+            <strong>Important Notes:</strong>
+            <li>The maximum file size allowed is 10MB.</li>
+            <li>File types such as .rar, .zip, and .exe are not permitted.</li>
+        </ul>
+    </section>
+
+    <section class="upload single-upload">
+        <p class="title">Single File Upload</p>
+        <p class="upload-instructions">Please upload a single file using the form below:</p>
+        <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
+          <div class="form-row">
+            <input id="inputfield" type="file" name="upfile" required>
+            <input id="button" type="submit" value="Upload">
+          </div>
+        </form>
+    </section>
+
+    <section class="upload multiple-upload">
+        <p class="title">Multiple File Upload</p>
+        <p class="upload-instructions">Please upload multiple files (maximum 5 files at a time):</p>
+        <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse/multiple">
+          <div class="form-row">
+            <input id="inputfield" type="file" name="upfile[]" multiple required>
+            <input id="button" type="submit" value="Upload">
+          </div>
+
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>Created as a demonstration of a simple file upload service.</p>
+    <p><strong>Note:</strong> This service is for educational purposes and showcases my projects.</p>
+</footer>
+</body>
+</html>
